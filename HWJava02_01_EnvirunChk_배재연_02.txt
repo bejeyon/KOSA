@@ -1,0 +1,21 @@
+##지정자 : 기본 형식에 덧붙여져서 다른 기능 제공
+	- public : 어디에서나 접근 가능
+	- static : 클래스 영역에 저장
+
+## Return Type
+	- Return값 존재 O : Data Type
+	- Return값 존재 X : void
+
+## Java : Hybrid
+	- Compile : javac.exe
+	>> javac 파일명 >> 문법 Chk >> *.class 생성
+	- 실행 : java.exe
+	>> java 기본명
+
+3번째 자바의 하이브리드된 특징 때문에 변하는 파일명의 변화를 잘 모르겠어서 직접 파일이 생성되는 예시를 보면 이해가 갈 것 같습니다.
+
+## main Method 형식
+
+public static void main(String[] args) {
+        System.out.println("Hello World");
+}

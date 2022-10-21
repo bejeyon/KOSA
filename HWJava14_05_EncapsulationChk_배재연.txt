@@ -1,0 +1,16 @@
+HWJava14_05_EncapsulationChk_배재연.txt
+
+## Encapsulation [ 캡슐화 ]
+
+private MV : 저장장소 ( 상태 )
+            └> getter / setter >> API
+public MM : ( 행위 ) ↑
+
+장점 : 보안
+단점 : MM 남발
+
+** getter / setter >> eclipse : 자동완성
+   - getXxxX()
+   - setXxxX( ___ )
+
+** XxxXxxDTO / VO >> 데이터 송수신

@@ -1,0 +1,12 @@
+## Reference Type
+
+01. 클래스 = MV + MM
+02. └> 객체 생성 후 사용
+03.	└> DataType 변수명 = 값; << Primitive (call by value)
+	      DataType 객체명 = new 생성자; (주소값) (call by reference)
+
+04. 생성자(Constructor) :		 ┌> 02. 메소드명은 클래스명과 똑같이.
+     - 특이한 메소드 : ※ 01. ReturnType(X) 메소드명();
+     - 03. OverLoad 가능하다.
+
+05. 객체.MV / 객체.MM

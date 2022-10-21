@@ -1,0 +1,38 @@
+## String
+
++ charAt(int index) : char
+	Returns the char value at the specified index.
++ compareTo(String anotherString) : int
+	Compares two strings lexicographically.
++ compareToIgnoreCase(String str) : int
+	Compares two strings lexicographically, ignoring case differences.
++ concat(String str) : String
+	Concatenates the specified string to the end of this string.
++ endsWith(String suffix) : boolean
+	Tests if this string ends with the specified suffix.
++ startsWith(String prefix) : boolean
+	Tests if this string starts with the specified prefix.
++ equals(Object anObject) : boolean
+	Compares this string to the specified object.
++ indexOf(int ch) : int
+	Returns the index within this string of the first occurrence of the specified character.
++ isEmpty() : boolean
+	Returns true if, and only if, length() is 0.
++ lastIndexOf(int ch) : int
+	Returns the index within this string of the last occurrence of the specified character.
++ length() : int
+	Returns the length of this string.
++ replace(char oldChar, char newChar) : String
+	Returns a string resulting from replacing all occurrences of oldChar in this string with newChar.
++ split(String regex) : String[]
+	Splits this string around matches of the given regular expression.
++ substring(int beginIndex, int endIndex) : String
+	Returns a string that is a substring of this string.
++ toCharArray() : char[]
+	Converts this string to a new character array.
++ toLowerCase() : String
+	Converts all of the characters in this String to lower case using the rules of the default locale.
++ toUpperCase() : String
+	Converts all of the characters in this String to upper case using the rules of the default locale.
++ valueOf(int i) : static String
+	Returns the string representation of the int argument.

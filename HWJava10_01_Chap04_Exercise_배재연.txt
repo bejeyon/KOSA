@@ -1,0 +1,123 @@
+HWJava10_01_Chap04_Exercise_배재연.zip
+
+Q1. 다음과 같이 점수(score)에 따라 학점이 부여되는 코드를 작성하고자 한다. if 선택 제어문의 조건식을 완성하시오(단, 0 <= score <= 100).
+
+	값의 범위		출력 학점
+	score > = 90	A학점
+	80 <= score < 90	B학점
+	70 <= score < 80	C학점
+	score < 70	F학점
+
+int score = 72;
+
+if(80 <= score < 90){
+	System.out.println("B학점");
+}
+else if(score > = 90){
+	System.out.println("A학점");
+}
+else if(70 <= score < 80){
+	System.out.println("C학점");
+}
+else{
+	System.out.println("F학점");
+}
+
+실행 결과
+C학점
+
+Q2. Q1에서 완성한 코드를 동일한 기능을 수행하는 switch 구문으로 작성하시오.
+
+int score = 72;
+
+switch(score/10){
+case 10:
+case 9:
+	System.out.println("A학점");
+	break;
+
+case 8:
+	System.out.println("B학점");
+
+case 7:
+	System.out.println("C학점");
+
+default:
+	System.out.println("F학점");
+}
+
+실행 결과
+C학점
+
+Q3. 다음과 같이 출력되도록 if 문과 break, continue를 이용해 for 문 코드를 완성하시오.
+
+for(int i = 0; ; i++){
+	if(i%2 == 1)
+		continue;
+	if(i >10)
+		break;
+	System.out.println(i);	// 0, 2, 4, 6, 8, 10
+}
+
+Q4. 다음 for 문과 동일한 기능을 수행하는 while 문을 작성하시오.
+
+for(int i = 10; i > 0; i -= 2){
+	System.out.println(i);
+}
+
+int i = 0;
+while(i > 0){
+	System.out.println(i);
+	i -= 2;
+}
+
+Q5. 다음 이중 for 문을 실행했을 때 'A'는 몇 회 출력되는지 쓰시오.
+
+for(int i = 0; i < 5; i++){
+	for(int j = 0; j < 3; j++){
+		if(i == 2) {
+			continue;
+		}
+		if(j == 1) {
+			break;
+		}
+		System.out.println("A");
+	}
+}
+
+4회
+
+Q6~Q7. 다음은 바깥쪽 10회, 안쪽 5회를 반복하는 이중 for 문이다. 다음 물음에 답하시오.
+
+for(int i = 0; i < 10; i++){
+	for(int j = 0; j < 5; j++){
+		// ...
+	}
+}
+
+Q6. 레이블을 사용하지 않고 i = 3, j = 2일 때 이중 for 문을 한 번에 탈출하는 코드를 완성하시오.
+
+for(int i = 0; i < 10; i++){
+	if(i == 3 && j == 2)
+		break;
+	for(int j = 0; j < 5; j++){
+		if(i == 3 && j == 2)
+			break;
+	}
+}
+
+for(int i = 0; i < 4; i++){
+	for(int j = 0; j < 5; j++){
+		if(i == 3 && j == 2)
+			break;
+	}
+}
+
+Q7. 레이블을 사용해 i = 3, j = 2일 때 이중 for문을 한 번에 탈출하는 코드를 완성하시오.
+
+LABEL1 : for(int i = 0; i < 10; i++){
+	for(int j = 0; j < 5; j++){
+		if(i == 3 && j == 2)
+			break LABEL1;
+	}
+}
