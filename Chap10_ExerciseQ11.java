@@ -20,7 +20,7 @@ System.out.println(a1.equals(a2));	// false
 
 ==================================================
 
-a1과 a2라는 객체는 서로 다른 객체. 비교할 return 된 String 값이 없음.
+a1은 Object의 equals를 상속받아서 a2와 서로 참조값 비교를 하게 됨.
 */
 
 package classes;
