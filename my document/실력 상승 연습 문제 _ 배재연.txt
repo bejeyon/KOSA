@@ -1,0 +1,67 @@
+연습문제
+
+Q1. 다음 중 변수나 상수 선언 명령으로 적절한 것은 O, 그렇지 않은 것은 X를 표시하고, 적절하지 않은 것에는 그 이유를 적으시오.
+
+구분		명령			가능 여부(O,X)		적절하지 않은 이유
+변수 선언		boolean flag;		O
+		byte public;		X			변수명으로 예약어(키워드) 사용
+		short data$;		O
+		char 이름;			O
+		int name3;		O
+		long 3name;		X			숫자로 시작
+상수 선언		final double USER_DATA;	O
+		final int $MY_DATA;		O
+		final float HELLO^^;		X			변수명에 쓰이는 특수문자는 _와 $만 사용 가능
+
+Q2. 다음 코드에서 변수 a,b,c가 메모리에 생성되는 행 번호와 사라지는 행 번호를 쓰시오.
+
+01 public static void main(String[] args){
+02 	int a = 3;
+03 	{
+04		int b;
+05 		b = 5;
+06	}
+07	int c = 7;
+08 }
+
+변수	변수의 생성 시점(행 번호)	변수의 삭제 시점(행 번호)
+a	02			08
+b	04			06
+c	07			08
+
+Q3. 소문자 'a'를 나타내는 유니코드값은 97(10진수), 1100001(2진수), 141(8진수), 또는 61(16진수)이다. char 자료형인 변수 value에 'a' 문자로 저장되는 값을 5가지 이상 나열하시오.
+
+char value = __________;
+System.out.println(value);
+
+A3. char value = 'a';, char value = 97;, char value = 0b1100001;, char value = 00141;, char value = 0x0061;, char value = '\u0061';
+
+Q4. 다음 코드에서 문법 오류가 발생하는 부분을 세 군데 찾아 수정하시오.
+
+01 byte a = 3;
+02 byte b = 5;
+03 byte c = 130;
+04 byte d = a + b;
+05 long e = 100;
+06 float f = 3.5;
+
+오류가 발생한 행 번호	수정한 코드
+03			byte c = (byte)130;
+04			byte d = (byte)(a+b); or int c = a + b;
+06			float f = 3.5f; or double f = 3.5;
+
+Q5. 다음 코드의 출력값을 쓰시오.
+
+System.out.println((int)5.6 + 3.5);
+System.out.println((int)5.6 + (int)3.5);
+System.out.println((int)(5.6 + 3.5));
+System.out.println(7 / 4);
+System.out.println((double)3 / 2);
+System.out.println((double)(3 / 2));
+
+출력값 : 	8.5
+	8
+	9
+	1
+	1.5
+	1.0

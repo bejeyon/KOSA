@@ -1,0 +1,12 @@
+HWJava12_03_ExceptionChk01_배재연.txt
+
+## 예외 처리 : Error 발생 시에도 정상적인 흐름 유지... 구현
+
+01. 던진다
+     throws >> API에 구현된 상태한테 던짐
+
+02. 잡는다
+     try ~ catch >> 그 외의 경우에는 잡아야 함
+
+03. 자바는 예외 처리를 잘 해준다.
+     java.lang>Exceptions(에 예외 경우 짱 많음)

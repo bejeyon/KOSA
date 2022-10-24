@@ -1,0 +1,14 @@
+#Data Type
+
+ 01. Primitive Type >> 8개				Casting [형변환]
+	  문자형 : char : 2byte		묵시적 ↓		명시적 ↑
+	  정수형 : byte : 1byte
+		short : 2byte
+		int : 4byte [Default]
+		long : 8byte
+	  실수형 : float : 4byte
+		double : 8byte [Default]
+	  논리형 : boolean : True / False
+	
+ 02. Reference Type
+	-> Class Type >> 100권(기본 API) + @(사용자가 만드는 것)

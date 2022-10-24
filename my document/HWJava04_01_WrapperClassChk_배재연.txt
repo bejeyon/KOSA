@@ -1,0 +1,14 @@
+Wrapper Class
+
+## Primitive Type : byte,
+     └>r 값
+    - MM(기능) 부여 >> Wrapper Class > XxxXxx
+    ex) "10"+"20"="1020" (이렇게 문자열로 저장된 숫자를 정수값으로 바꾸는 기능이 필요)
+
+    문자 : Character
+    정수 : Byte, Short, Integer, Long
+    실수 : Float, Double
+    논리 : Boolean
+
+## Reference Type : 100 + @
+     └> MV+MM(기능)

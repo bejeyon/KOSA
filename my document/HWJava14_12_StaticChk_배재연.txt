@@ -1,0 +1,13 @@
+## HWJava14_12_StaticChk_배재연.txt
+
+01. 공통 사용
+
+02. MV : 모든 객체가 공유
+	cf) ※ 전역변수 : 모든 메소드가 공유
+
+03. MM :
+	- static 변수만 사용 가능
+	- 자동 final ( Override X)
+
+04. static 블럭 : {}
+	- 초기화 << 생성자 보다 우선

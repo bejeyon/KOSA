@@ -1,0 +1,21 @@
+HWJava13_06_ModifierChk01_배재연.txt
+
+## Modifier [지정자, 제어자]
+01. 기본 형식에 덧붙여져서 추가적인 기능 제공
+02. Access Modifier와 그 외
+	- Access Modifier[접근지정자] : 접근 지정을 어디까지 허용할 건지 정하는 역할
+	  public > protected > default(=No Access Modifier) > private 순서로 허용 범위가 넓음
+	 	- class = MemberVariable + MemberMethod (셋 모두에 access modifier 붙을 수 있음)
+	 	- class : default, public 가능
+	- 그 외 : static(class의 기본은 객체 생성 후 사용해야 하는데 static 선언을 하면 객체 생성 없이 class명만으로 사용 가능), final(상수화), abstract(추상화), ...
+03. 지정자는 기본 형식 여러 개가 올 수 있다.
+	- but Access Modifier는 1개만 가능.(당연함. 접근 범위 지정이니까)
+
+## Access Modifier : 접근 허용 범위
+
+		같은 package			다른 package
+	같은 class		다른 class		상속(inherit) O	상속(inherit) X
+public	O		O		O		O
+protected	O		O		O		X
+default	O		O		X		X
+private	O		X		X		X
