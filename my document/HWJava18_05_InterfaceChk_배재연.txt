@@ -1,0 +1,27 @@
+## HWJava18_05_InterfaceChk_배재연.txt
+
+## abstract : 추상화
+
+01. MM : {} X
+02. 추상 메소드가 하나라도 존재
+	>> abstract class
+03. 상속받은 곳에서 재정의, 구현
+
+--------------------------------------------
+
+## 인터페이스(interface)
+
+01. class >> interface 명{
+		MV : 100% static(생략 가능), 100% final(생략 가능)
+		MM : 100% abstract(생략 가능)
+	   }
+02. 100% public(생략 가능)
+
+03. 상속(extends) >> implements
+
+04. 다중상속 가능하다
+	extends C01, C02 >> X(불가능)
+	implements I01, I02 >> O(가능)
+
+05. interface끼리 상속 >> extends
+	I01 extends I02, I03 >> O(가능)
