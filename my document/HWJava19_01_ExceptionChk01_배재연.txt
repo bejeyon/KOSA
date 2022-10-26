@@ -1,0 +1,18 @@
+HWJava19_01_ExceptionChk01_배재연.txt
+
+## 오류
+01. Error
+02. Exception : 처리 가능
+
+## Exception : 예외
+01. 목적 : 비정상적인 종료를 막아서, 정상적인 실행 상태를 유지.
+02. 예외 처리
+	- 던진다 : throws
+	- 잡는다 : try ~ catch
+	- 임의 발생 : throw 발생 객체
+			└> new 예외생성자()
+03. 예외 종류
+	Runtime Exception : [Unchecked Exception]
+	 - 컴파일 시에 Chk X / 실행 시에 Chk O
+	Runtime Exception 外
+	 - 컴파일 시에 Chk O / 실행 시에 Chk X

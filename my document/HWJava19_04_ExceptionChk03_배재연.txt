@@ -1,0 +1,46 @@
+HWJava19_04_ExceptionChk03_배재연.txt
+
+## 오류
+01. Error
+02. Exception : 처리 가능
+
+## Exception : 예외
+01. 목적 : 비정상적인 종료를 막아서, 정상적인 실행 상태를 유지.
+02. 예외 처리
+	- 던진다 : throws
+	- 잡는다 : try ~ catch
+	- 임의 발생 : throw 발생 객체
+			└> new 예외생성자()
+03. 예외 종류
+	Runtime Exception : [Unchecked Exception]
+	 - 컴파일 시에 Chk X / 실행 시에 Chk O(상대적으로 잡기 어려움)
+		## Class RuntimeException
+
+		java.lang.Object
+		└ java.lang.Throwable
+		    └ java.lang.Exception
+		        └ java.lang.RuntimeException
+			- ArithmeticException : "divide by zero"
+			- ClassCastException : 형변환할 수 없는 클래스를 형변환할 때 발생.
+			- IndexOutOfBoundsException : index out of range.
+			        ArrayIndexOutOfBoundsException
+			- NullPointerException : null인 객체를 사용할 때
+
+	Runtime Exception 外
+	 - 컴파일 시에 Chk O / 실행 시에 Chk X(출시 전에 잡음)
+
+=========================================
+
+Syntax 01 ]
+try {
+  // 예외 발생 가능한 문장;
+}
+catch(Exception e) {
+  // 예외 발생 시 적용할 문장;
+}
+
+Syntax 02 ]
+method () throws IOException
+
+Syntax 03 ]
+throw new ArithmeticException();
