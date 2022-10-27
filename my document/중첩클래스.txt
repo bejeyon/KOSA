@@ -1,0 +1,24 @@
+## 중첩클래스 (Inner Class)
+	클래스안에 완벽한 클래스 하나가 내포되어져 있는 클래스.
+
+** 자바의 중첩클래스 4가지
+
+1. 일반 중첩클래스(Inner Class) : instance class
+	- 외부클래스를 먼저 생성해야만 생성 가능하다.
+	- static 멤버를 포함할 수 없다.
+
+	- 형식 ] class Outer{ 
+                     class Inner{...}
+                 }
+	- 생성파일 ] Outer.class, Outer$Inner.class 라는 파일이 생긴다.
+	- 객체생성 ] Outer outer = new Outer();
+		    Outer.Inner outerInner = outer.new Inner(); 
+		    또는
+		    Outer.Inner outerInner = new Outer().new Inner();
+
+2. 정적 중첩 클래스(ststic inner Class)
+	- 외부 클래스를 먼저 생성하지 않고 생성가능하다.
+	- 중첩 클래스 내부에 static 멤버를 포함할 수 있는 형태
+	   단, 바깥쪽 클래스의 non-static 멤버는 포함할 수 없다.
+	- 객체 생성] 
+		Outer2.Inner2 outer2Inner2 = new Outer2.Inner2();

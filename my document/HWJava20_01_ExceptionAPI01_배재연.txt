@@ -1,0 +1,27 @@
+HWJava20_01_ExceptionAPI01_배재연.txt
+
+java.lang
+** Thread
+	+ public static void sleep(long millis)
+                 	 throws InterruptedException
+
+** Class
+	+ forName(String className) : Returns the Class object
+		e.g) ojdbc6.jar : 클래스
+			"oracle.jdbc.driver.OracleDriver".class
+	public static Class<?> forName(String className)
+                       	 throws ClassNotFoundException
+
+** System > static InputStream(필드)
+	+ public abstract int read()
+               	   throws IOException
+
+java.io
+** FilterInputStream > FileInputStream(File file)(생성자)
+	+ public FileInputStream(File file)
+                	throws FileNotFoundException
+
+java.lang
+** Object
+	+ protected Object clone()
+	                throws CloneNotSupportedException

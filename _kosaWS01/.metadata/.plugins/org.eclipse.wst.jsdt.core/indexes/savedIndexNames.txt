@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\KOSA\__eclipse202209R_KOSA\_kosaWS01\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3985146185.index

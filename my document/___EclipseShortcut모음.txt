@@ -1,0 +1,86 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+https://blog.naver.com/kenchi6734/222478633271
+
+
+## 편집 단축키
+
+​ctrl + D :                                       줄 삭제.
+ctrl + Alt + 위/아래 :              줄 복사.
+Ctrl + Shift + Enter :          현재 줄에 새줄 추가.
+Shift + Enter :                           다음 줄에 새줄 추가.
+Ctrl + Right :                             다음 문자로 이동.
+Ctrl + Left :                                이전 문자로 이동.
+Ctrl + L :                               원하는 라인으로 이동.
+Ctrl + Space :                           코드 어시스트. >> 자동 완성 기능
+Alt + Shift + 방향키 :            블록 선택하기.
+Tab :                                               들여 쓰기.
+Shift + Tab :                              내어 쓰기.
+Shift + Alt + T :                  리팩토링 메뉴 띄우기.
+Ctrl + Shift + O :                Import 정리.
+Ctrl + Shift + F :                      코드 자동 정렬.
+
+​
+## 주석 단축키
+
+​Ctrl + / :                                       선택된 라인 주석 처리/해제 (//).
+Ctrl + Shift + / :                      선택된 라인 주석 처리 (/* */).
+Ctrl + Shift + \ :                   주석 해제 (/* */).
+Alt + Shift + J :                        메서드 및 클래스 설명 주석.
+
+## 디버깅 단축키
+
+​Ctrl + Shift + B :                     현 커서의 위치에 브레이크 포인터 설정/해제.
+F11 :                                              디버깅 시작.
+F8 :                                                 디버깅 계속.
+F6 :                                                 한 줄씩 실행 (Step Over).
+F5 :                                                 한 줄씩 실행하되 함수일 경우 그 함수 내부로 들어감 (Step Into).
+Ctrl + R :                                      현재 라인까지 실행 (Run to Line).
+F11 or Ctrl + F11 :                최근 실행한 Run 실행.
+
+## 검색 단축키
+
+~Ctrl + F :                                      기본 검색
+Ctrl + J :                                       입력하면서 검색 (점증적 검색).
+Ctrl + Shift + J :                      입력하면서 밑에서 검색.
+Ctrl + K :                                      다음 찾기 - 현재 블록 설정된 단어 찾기.
+Ctrl + Shift + K :                     이전 찾기 - 현재 블록 설정된 단어 찾기.
+~Ctrl + H :                              검색 다이얼로그 (메서드, 타입, 패키지 등 검색 가능).
+
+​
+## 내비게이션 단축키
+
+​
+Ctrl + Shift + E :                     에디터 안에서 열린 파일 간의 이동.
+Ctrl + E :                                      에디터 안에서 열린 파일 간의 이동. (작은 레이어)
+Ctrl + F6 :                                   에디터 안에 열린 파일 간 이동하는 데 F6를 누를 때마다 하나씩 순차적으로 넘어간다.
+Ctrl + F7 :                                   뷰(View) 간 전환.
+Ctrl + F8 :                                   퍼스펙티브(Perspective) 간 전환.
+F12 :                                              어디서든 에디터로 포커스 된다.
+
+
+## 정보 단축키
+
+​Ctrl + Shift + R :                     리소스 찾기.
+Ctrl + O :                                     레이어로 현재 파일의 Outline 보여준다.
+Ctrl + T :                                      레이어로 계층구조 보여준다.
+Ctrl + Shift + Space :           메서드의 괄호 안에서 누르면 파라미터 타입을 볼 수 있다.
+~Ctrl + 1 :                                      에러 난 곳(빨간 줄 표시)에서 누르면 레이어로 해결 방법이 나온다.
+F3 :                                                 해당 메서드나 클래스가 정의된 곳으로 이동한다.
+Ctrl + Shift + G :                해당 메서드, 객체, 변수가 사용(호출) 된 모든 곳을 찾는다.
+
+​
+## 기타 단축키
+
+​Ctrl + Shift + L :                 단축키 리스트
+Ctrl + 3 :                              Quick Access
+~Ctrl + M :                                    화면 최대화
+Ctrl + W :                                    파일 에디터 닫기
+Alt + Shift + X, R :                  Run on Server
+
+​
+아래는 이클립스 단축키 리스트이다.[출처] 이클립스(Eclipse) 단축키|작성자 kenchi6734
+
+
+
+
