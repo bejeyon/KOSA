@@ -1,0 +1,22 @@
+HWJava21_16_CollectionChk_배재연.zip
+
+## Collection
+01. 객체 그룹 관리
+	>> 객체를 잘 관리할 수 있도록 제공
+02. 중복 가능 O, X
+03. 순서 O, X
+04. Set, List
+
+		Collection					Map <K, V>
+	List	Set				Key		Value
+index
+_____	_____					__________		__________
+_____	_____					__________		__________
+_____	_____					__________		__________
+
+중복 가능 O	중복 가능 X(중복되면 error/override)	Set	+	List
+순서 O		순서 X
+
+CRUD :	기본적인 데이터 처리 기능인 
+	Create(생성), Read(읽기), Update(갱신), Delete(삭제)
+	를 묶어서 일컫는 말이다.

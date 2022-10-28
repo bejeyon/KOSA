@@ -33,10 +33,10 @@ class Regular_TEST extends Employee_TEST {
 		this.pay = pay;
 	}
 
-	Regular_TEST() {
+	Regular_TEST() {	//Regular_TEST.java:36: error: constructor Employee_TEST in class Employee_TEST cannot be applied to given types;
 	}
 
-	Regular_TEST(String no, String name, String initday, int pay) {
+	Regular_TEST(String no, String name, String initday, int pay) {	//Regular_TEST.java:40: error: constructor Employee_TEST in class Employee_TEST cannot be applied to given types;
 		super();
 		setPay(pay);
 	}

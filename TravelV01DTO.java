@@ -20,8 +20,13 @@ class TravelV01DTO {
 	public String getFlight() {
 		return flight;
 	}
-	public int getTravelType() {
-		return travelType;
+	public String getTravelType() {
+		String tt = "";
+		if(travelType == INDIVIDUAL)
+			tt = "자유여행";
+		if(travelType == PACKAGE)
+			tt = "패키지여행";
+		return tt;
 	}
 	public int getMaxPerson() {
 		return maxPerson;
@@ -44,7 +49,7 @@ class TravelV01DTO {
 		this.maxPerson = maxPerson;
 	}
 
-	TravelV01DTO(){}
+	TravelV01DTO() {}
 
 	TravelV01DTO(String travelCode, String cityName, String flight, int travelType, int maxPerson) {
 		setTravelCode(travelCode);

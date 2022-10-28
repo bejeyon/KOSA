@@ -6,6 +6,7 @@ class TravelV01Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		TravelV01DAO dao = new TravelV01DAO();
+		dao.dtoSet();
 		int inputAnswer = -1;
 
 		while(true) {
@@ -44,7 +45,7 @@ class TravelV01Main {
 						String changeMaxNum = sc.nextLine();
 						int index = dao.mChangeMaxNum(changeMaxCode, Integer.parseInt(changeMaxNum));
 						System.out.println("최대 예약 가능 인원이 " + changeMaxNum + "으로 변경되었습니다.");
-						continue;
+						break;
 					}
 					else {
 						System.out.print("\t※ ※ 일치하는 여행 코드가 없습니다! 확인해주세요. ※ ※");

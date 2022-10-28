@@ -30,7 +30,7 @@ class TravelV01DAO {
 		System.out.println();
 		System.out.print("여행코드\t");
 		System.out.print("도시\t");
-		System.out.print("비행기\t");
+		System.out.print("비행기\t\t");
 		System.out.print("여행유형\t");
 		System.out.print("최대인원");
 		System.out.println();
@@ -40,21 +40,21 @@ class TravelV01DAO {
 		switch(index) {
 			case 49:
 				for(int i = 0; i < dto.length; i++) {
-					System.out.print(dto[i].getTravelCode());
-					System.out.print(dto[i].getCityName());
-					System.out.print(dto[i].getFlight());
-					System.out.print(dto[i].getTravelType());
+					System.out.print(dto[i].getTravelCode() + "\t\t");
+					System.out.print(dto[i].getCityName() + "\t");
+					System.out.print(dto[i].getFlight() + "\t");
+					System.out.print(dto[i].getTravelType() + "\t");
 					System.out.print(dto[i].getMaxPerson());
 					System.out.println();
 				}
 				break;
 			case 50:
 				for(int i = 0; i < dto.length; i++) {
-					if(dto[i].getTravelType() == TravelV01DTO.INDIVIDUAL){
-						System.out.print(dto[i].getTravelCode());
-						System.out.print(dto[i].getCityName());
-						System.out.print(dto[i].getFlight());
-						System.out.print(dto[i].getTravelType());
+					if(dto[i].getTravelType().equals("자유여행")){
+						System.out.print(dto[i].getTravelCode() + "\t\t");
+						System.out.print(dto[i].getCityName() + "\t");
+						System.out.print(dto[i].getFlight() + "\t");
+						System.out.print(dto[i].getTravelType() + "\t");
 						System.out.print(dto[i].getMaxPerson());
 						System.out.println();
 					}
@@ -62,51 +62,51 @@ class TravelV01DAO {
 				break;
 			case 51:
 				for(int i = 0; i < dto.length; i++) {
-					if(dto[i].getTravelType() == TravelV01DTO.PACKAGE){
-						System.out.print(dto[i].getTravelCode());
-						System.out.print(dto[i].getCityName());
-						System.out.print(dto[i].getFlight());
-						System.out.print(dto[i].getTravelType());
+					if(dto[i].getTravelType().equals("패키지여행")){
+						System.out.print(dto[i].getTravelCode() + "\t\t");
+						System.out.print(dto[i].getCityName() + "\t");
+						System.out.print(dto[i].getFlight() + "\t");
+						System.out.print(dto[i].getTravelType() + "\t");
 						System.out.print(dto[i].getMaxPerson());
 						System.out.println();
 					}
 				}
 				break;
+		}
+	}
+	
+	boolean mMatchCode(String travelCode) {
+		boolean match = false;
+		for (int i = 0; i < dto.length; i++)
+			if(dto[i].getTravelCode().equals(travelCode))
+				match = true;
+		return match;
+	}
+
+	int mMatchMaxNum(String travelCode) {
+		int beforMax = 0;
+		for (int i = 0; i < dto.length; i++)
+			if(dto[i].getTravelCode().equals(travelCode))
+				beforMax = dto[i].getMaxPerson();
+		return beforMax;
+	}
+
+	int mChangeMaxNum(String changeMaxCode, int num) {
+		int indexNum = 0;
+		for (int i = 0; i < dto.length; i++)
+			if(dto[i].getTravelCode().equals(changeMaxCode)) {
+				dto[i].setMaxPerson(num);
+				indexNum = i;
 			}
-		}
-		
-		boolean mMatchCode(String travelCode) {
-			boolean match = false;
-			for (int i = 0; i < dto.length; i++)
-				if(dto[i].getTravelCode().equals(travelCode))
-					match = true;
-			return match;
-		}
+		return indexNum;
+	}
 
-		int mMatchMaxNum(String travelCode) {
-			int beforMax = 0;
-			for (int i = 0; i < dto.length; i++)
-				if(dto[i].getTravelCode().equals(travelCode))
-					beforMax = dto[i].getMaxPerson();
-			return beforMax;
-		}
-
-		int mChangeMaxNum(String changeMaxCode, int num) {
-			int indexNum = 0;
-			for (int i = 0; i < dto.length; i++)
-				if(dto[i].getTravelCode().equals(changeMaxCode)) {
-					dto[i].setMaxPerson(num);
-					indexNum = i;
-				}
-			return indexNum;
-		}
-
-		void travelPrintInfo(int index){
-			System.out.print(dto[index].getTravelCode());
-			System.out.print(dto[index].getCityName());
-			System.out.print(dto[index].getFlight());
-			System.out.print(dto[index].getTravelType());
-			System.out.print(dto[index].getMaxPerson());
-			System.out.println();
-		}
+	void travelPrintInfo(int index){
+		System.out.print(dto[index].getTravelCode() + "\t\t");
+		System.out.print(dto[index].getCityName() + "\t");
+		System.out.print(dto[index].getFlight() + "\t");
+		System.out.print(dto[index].getTravelType() + "\t");
+		System.out.print(dto[index].getMaxPerson());
+		System.out.println();
+	}
 }
